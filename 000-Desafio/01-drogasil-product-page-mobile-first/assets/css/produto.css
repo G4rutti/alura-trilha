@@ -1,0 +1,32 @@
+.produto{
+    margin-top: 6vh;
+}
+
+.lista__produtos{
+    padding: 0 1.5em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.lista__produtos__item__link{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5em;
+    text-decoration: none;
+    color: var(--cinza-claro);
+    font-family: var(--fonte-secundaria);
+    font-weight: 700;
+}
+
+.lista__produtos__item{
+    display: flex;
+}
+
+.favoritar{
+    color: var(--azul);
+    background-color: var(--azul-escuro);
+    padding: .8em 1.2em;
+    border-radius: 4px;
+}

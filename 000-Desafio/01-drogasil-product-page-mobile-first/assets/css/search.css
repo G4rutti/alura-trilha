@@ -1,0 +1,22 @@
+.barra-pesquisa{
+    width: 100%;
+    text-align: center;
+}
+
+.barra-pesquisa__input{
+    width: 20em;
+    padding: 1.2em 1.75em;
+    border: 1px solid var(--cinza-claro);
+    border-radius: 4px;
+    list-style: none;
+    outline: none;
+}
+.barra-pesquisa__input::placeholder{
+    font-family: var(--fonte-secundaria);
+    font-size: 14px;
+    text-align: start;
+    background-image: url("../img/search.svg");
+    background-repeat: no-repeat;
+    background-position: 18em;
+}
+

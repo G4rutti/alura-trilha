@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('./header.css');
+@import url('./search.css');
+@import url('./produto.css');
+@import url('./mainSection.css');
+@import url('./divisao.css');
+
+
+:root {
+    --fonte-principal: "Inter";
+    --fonte-secundaria: "Open Sans";
+    --cinza: #474646;
+    --cinza-claro: #858585;
+    --cinza-negrito: #6A7086;
+    --cinza-diferente: #696969;
+    --azul: #3688FF;
+    --azul-escuro: #1864d631;
+    --preto:#363844;
+}
+
+
+body{
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--preto);
+}
