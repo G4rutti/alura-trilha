@@ -5,6 +5,7 @@
 @import url('./produto.css');
 @import url('./mainSection.css');
 @import url('./divisao.css');
+@import url('./cta.css');
 
 
 :root {
@@ -14,6 +15,7 @@
     --cinza-claro: #858585;
     --cinza-negrito: #6A7086;
     --cinza-diferente: #696969;
+    --cinza-para-infos: #71768E;
     --azul: #3688FF;
     --azul-escuro: #1864d631;
     --preto:#363844;
