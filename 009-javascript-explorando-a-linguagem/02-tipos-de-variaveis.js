@@ -14,3 +14,5 @@ console.log((10 + 8) * 2); // 36
 let numTexto = "2";
 console.log(parseInt(numTexto)); // Transformar string em int
 console.log(parseFloat(parseInt(numTexto))); // Transformar o int em 2.0
+
+console.log(`Meu nome é: ${nome}`);

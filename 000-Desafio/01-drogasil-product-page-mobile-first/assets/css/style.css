@@ -28,3 +28,12 @@ body{
     font-weight: 400;
     color: var(--preto);
 }
+
+@media screen and (min-width: 1040px){
+    .teste{
+        display: flex;
+        flex-wrap: nowrap;
+        margin: 0 auto;
+        padding: 0 3em;
+    }
+}

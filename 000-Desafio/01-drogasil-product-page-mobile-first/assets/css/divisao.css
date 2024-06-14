@@ -24,3 +24,10 @@
     background-color: #D24914;
     transform: translateX(80%);
 }
+
+
+@media screen and (min-width: 1040px){
+    .divisao{
+        display: none;
+    }
+}

@@ -55,3 +55,21 @@
     color: var(--cinza-negrito);
     font-weight: bold;
 }
+
+@media screen and (min-width: 1040px){
+    .produto__titulo{
+        width: 270px;
+        color: var(--cinza-diferente);
+        font-size: 24px;
+    }
+    .produto__principal__avaliacao > .avaliacao{
+        display: none;
+    }
+    .fases{
+        font-size: 18px;
+        margin-bottom: 1vh;
+    }
+    .peso{
+        font-weight: 400;
+    }
+}

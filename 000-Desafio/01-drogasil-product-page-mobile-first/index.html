@@ -35,68 +35,107 @@
     <section class="barra-pesquisa">
         <input type="text" placeholder="O que deseja encontrar?" class="barra-pesquisa__input">
     </section>
-    <main class="produto">
-        <section class="produto__top__infos">
-            <ul class="lista__produtos">
-                <li class="lista__produtos__item">
-                    <a href="#" class="lista__produtos__item__link">
-                        <img src="assets/img/back.svg" alt="">
-                        <span>Voltar</span>
-                    </a>
+    <div class="teste">
+        <main class="produto">
+            <section class="produto__top__infos">
+                <ul class="lista__produtos">
+                    <li class="lista__produtos__item">
+                        <a href="#" class="lista__produtos__item__link">
+                            <img src="assets/img/back.svg" alt="">
+                            <span>Voltar</span>
+                        </a>
+                    </li>
+                    <li class="lista__produtos__item">
+                        <a href="#" class="lista__produtos__item__link favoritar">
+                            <img src="assets/img/like.svg" alt="">
+                            <span>Favoritar</span>
+                        </a>
+                    </li>
+                </ul>
+            </section>
+            <section class="produto__principal">
+                <img class="produto__imagem__mob" src="./assets/img/ninho.png">
+                <h1 class="produto__titulo">Fórmula Infantil Ninho Fases 1+ Nestlé 1 a 3 anos 800g</h1>
+                <p class="produto__descricao">Vendido e entregue por Drogasil</p>
+                <article class="produto__principal__avaliacao">
+                    <div class="avaliacao">
+                        <img class="produto__avaliacao" src="assets/img/fiveStars.svg">
+                        <span class="produto__avaliacao__descricao">(7)</span>
+                    </div>
+                    <div class="dados">
+                        <p class="produto__dados fases">Ninho Fases</p>
+                        <p class="produto__dados peso">800g</p>
+                    </div>
+                </article>
+                <div class="produto__descricao">
+                    <button class="produto__descricao__add">Adicionar aos favoritos</button>
+                    <ul>
+                        <li>Fómula Infantil exclusiva, rica em  fibras, vitaminas e minerais.</li>
+                        <li>Ajuda a complementar a alimentação das crianças entre 1 e 3 anos.</li>
+                        <li>Contribui para o funcionamento adequado do intestino.</li>
+                    </ul>
+                    <p>
+                        ESTE PRODUTO NÃO DEVE SER USADO PARA ALIMENTAR CRIANÇAS MENORES DE 1 (UM) ANO DE IDADE. 
+                        O ALEITAMENTO MATERNO EVITA INFECÇÕES E ALERGIAS E É RECOMENDADO ATÉ OS 2 (DOIS) 
+                        ANOS DE IDADE OU MAIS.
+                    </p>
+                    <button class="produto__descricao__detalhe">
+                        + detalhes
+                    </button>
+                </div>
+            </section>
+        </main>
+        <section class="imagem__produto descer">
+            <img src="assets/img/ninho.png" alt="" class="imagem__produto__desk">
+        </section>
+        <section class="divisao">
+            <hr>
+            <p class="divisao__texto">Leve + Pague -</p>
+        </section>
+        <section class="cta descer">
+            <ul class="cta__lista">
+                <li class="cta__lista__item">
+                    <p>01 unidade</p>
+                    <span>por <strong>R$ 55,99</strong></span>
                 </li>
-                <li class="lista__produtos__item">
-                    <a href="#" class="lista__produtos__item__link favoritar">
-                        <img src="assets/img/like.svg" alt="">
-                        <span>Favoritar</span>
-                    </a>
+                <li class="cta__lista__item">
+                    <p>Leve 2 por</p>
+                    <span>por <strong>R$ 39,99</strong> cada</span>
                 </li>
             </ul>
-        </section>
-        <section class="produto__principal">
-            <img class="produto__imagem" src="./assets/img/ninho.png">
-            <h1 class="produto__titulo">Fórmula Infantil Ninho Fases 1+ Nestlé 1 a 3 anos 800g</h1>
-            <p class="produto__descricao">Vendido e entregue por Drogasil</p>
-            <article class="produto__principal__avaliacao">
-                <div class="avaliacao">
-                    <img class="produto__avaliacao" src="assets/img/fiveStars.svg">
-                    <span class="produto__avaliacao__descricao">(7)</span>
-                </div>
-                <div class="dados">
-                    <p class="produto__dados">Ninho Fases</p>
-                    <p class="produto__dados">800g</p>
+            <button class="cta__botao">Comprar</button>
+            <article class="cta__dados">
+                <h2 class="cta__dados__titulo">
+                    Consulte frete e prazo
+                </h2>
+                <p class="cta__dados__texto">
+                    Insira seu CEP para consultar as formas de entrega disponíves
+                </p>
+                <div class="cta__dados__action">
+                    <input type="text" placeholder="Insira seu CEP">
+                    <button>Consultar</button>
                 </div>
             </article>
         </section>
-    </main>
-    <section class="divisao">
-        <hr>
-        <p class="divisao__texto">Leve + Pague -</p>
-    </section>
-    <section class="cta">
-        <ul class="cta__lista">
-            <li class="cta__lista__item">
-                <p>01 unidade</p>
-                <span>por <strong>R$ 55,99</strong></span>
-            </li>
-            <li class="cta__lista__item">
-                <p>Leve 2 por</p>
-                <span>por <strong>R$ 39,99</strong> cada</span>
-            </li>
-        </ul>
-        <button class="cta__botao">Comprar</button>
-        <article class="cta__dados">
-            <h2 class="cta__dados__titulo">
-                Consulte frete e prazo
-            </h2>
-            <p class="cta__dados__texto">
-                Insira seu CEP para consultar as formas de entrega disponíves
-            </p>
-            <div class="cta__dados__action">
-                <input type="text" placeholder="Insira seu CEP">
-                <button>Consultar</button>
-            </div>
-        </article>
-    </section>
+        <section class="cta__desk descer">
+            <article class="buy-section">
+                <p class="buy-section__price">R$55,99</p>
+                <div class="buy-section__buy">
+                    <p class="buy_quantidade">Quantidade:</p>
+                    <div class="buy_quantidade__input">
+                        <span>-</span>
+                        <p>1</p>
+                        <span>+</span>
+                    </div>
+                </div>
+            </article>
+            <button class="cta__botao">
+                <img src="assets/img/cart.svg" alt="" srcset="">
+                Comprar
+            </button>
+        </section>
+    </div>
+
 </body>
 
 </html>
