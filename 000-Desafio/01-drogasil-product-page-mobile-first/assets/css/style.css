@@ -6,6 +6,8 @@
 @import url('./mainSection.css');
 @import url('./divisao.css');
 @import url('./cta.css');
+@import url('./newHeader.css');
+@import url('./navegacao.css');
 
 
 :root {
@@ -32,8 +34,12 @@ body{
 @media screen and (min-width: 1040px){
     .teste{
         display: flex;
-        flex-wrap: nowrap;
-        margin: 0 auto;
-        padding: 0 3em;
+        justify-content: center;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .teste{
+        justify-content: space-around;
     }
 }

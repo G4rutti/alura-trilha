@@ -40,11 +40,10 @@
     display: none
 }
 
+
 @media screen and (min-width: 1040px){
     .produto{
         float: left;
-        flex: 0 0 31.25%;
-        max-width: 31.25%;
     }
     .produto__top__infos{
         display: none;
@@ -108,4 +107,17 @@
         font-weight: 800;
         font-style: italic;
     }
+}
+
+@media screen and (min-width: 1200px){
+    .descer{
+        top: 5vh;
+    }
+
+    .produto__descricao__add{
+        width: 20vw;
+    }
+    .produto__descricao p{
+        width: 30vw;
+    } 
 }

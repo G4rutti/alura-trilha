@@ -20,3 +20,26 @@
     background-position: 18em;
 }
 
+@media screen and (min-width: 1040px){
+    .barra-pesquisa{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .barra-pesquisa{
+        display: none;
+    }
+    .barra-pesquisa__input{
+        width: 40em;
+    }
+    .barra-pesquisa__input::placeholder{
+        font-family: var(--fonte-secundaria);
+        font-size: 14px;
+        text-align: start;
+        background-image: url("../img/search.svg");
+        background-repeat: no-repeat;
+        background-position: 37em;
+    }
+    
+}

@@ -22,3 +22,8 @@
 }
 
 
+@media screen and (min-width: 1040px){
+    .container{
+        display: none;
+    }
+}
