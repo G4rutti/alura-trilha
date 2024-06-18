@@ -1,0 +1,7 @@
+@import url('./banner-titulo.css');
+@import url('./banner-imagem.css');
+
+.banner{
+    position: relative;
+}
+

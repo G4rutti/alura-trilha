@@ -1,0 +1,16 @@
+@import url('sobre-descricao.css');
+@import url('sobre-titulo.css');
+
+.sobre{
+    text-align: center;
+    padding: 2.5rem;
+}
+
+
+
+@media screen and (max-width: 768px){
+    .sobre{
+        padding: 2.5rem 1rem;
+        
+    }   
+}

@@ -13,4 +13,3 @@ export default class Admin extends User {
         return `Curso de ${nomeDoCurso}, criado com ${qtdVagas} vagas`
     }
 }
-
