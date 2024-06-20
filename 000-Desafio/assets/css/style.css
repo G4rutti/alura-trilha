@@ -8,6 +8,7 @@
 @import url('./cta.css');
 @import url('./newHeader.css');
 @import url('./navegacao.css');
+@import url('./modal.css');
 
 
 :root {
@@ -29,10 +30,13 @@ body{
     font-size: 16px;
     font-weight: 400;
     color: var(--preto);
+    max-width: 1400px;
+    margin: auto;
 }
 
 @media screen and (min-width: 1040px){
     .teste{
+        
         display: flex;
         justify-content: center;
     }

@@ -21,9 +21,15 @@
     justify-content: space-around;
 }
 
+.new-cabecalho{
+    display: none;
+}
 
 @media screen and (min-width: 1040px){
     .container{
         display: none;
+    }
+    .new-cabecalho{
+        display: block;
     }
 }

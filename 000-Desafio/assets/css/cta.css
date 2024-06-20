@@ -29,6 +29,7 @@
     border-radius: 4px;
     border: 0;
     width: 100%;
+    cursor: pointer;
 }
 .cta__dados{
     display: flex;
@@ -128,6 +129,7 @@
     }
     .cta__botao{
         display: flex;
+        max-width: 280px;
         flex-direction: row-reverse;
         gap: 1em;
         justify-content: center;

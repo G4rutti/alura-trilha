@@ -1,7 +1,7 @@
 .navegacao{
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
-    border-bottom: 1px solid #d6d6d6;;
+    border-bottom: 1px solid #d6d6d6;
     padding:  0;
 }
 
@@ -44,4 +44,15 @@
 .navegacao__container  svg{
     width: 24px;
     height: 24px;
+}
+
+.navegacao{
+    display: none;
+}
+
+
+@media screen and (min-width: 1040px){
+    .navegacao{
+        display: grid;
+    }
 }
