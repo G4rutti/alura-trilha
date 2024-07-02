@@ -39,24 +39,23 @@ const DialogEstilizado = styled.dialog`
 
 interface ModalProps {
     foto: IFotos | null;
-    aoFechar: () => void;
+    onClose: () => void;
+    onClick: () => void;
 }
 
-const Modal = ({ foto, aoFechar }: ModalProps) => {
+const Modal = ({ foto, onClose, onClick }: ModalProps) => {
     return (
         <>
             {foto && (
                 <>
-                    <Overlay onClick={aoFechar} />
-                    <DialogEstilizado onClose={aoFechar} open={!!foto?.path}>
+                    <Overlay onClick={onClose} />
+                    <DialogEstilizado onClose={onClose}  open={!!foto?.path}>
                         <Imagem
                             foto={foto}
-                            fonte={foto}
-                            titulo={foto}
                             expandida={true}
                         />
                         <form method="dialog">
-                            <BotaoIcone type="button" onClick={aoFechar}>
+                            <BotaoIcone type="button" onClick={onClick}>
                                 <img src={icone} alt="Icone de fechar" />
                             </BotaoIcone>
                         </form>

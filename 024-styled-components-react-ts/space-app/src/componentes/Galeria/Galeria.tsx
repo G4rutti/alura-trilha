@@ -21,10 +21,13 @@ const SecaoFluida = styled.section`
         flex-wrap: wrap;
     }
     `
+
 interface GaleriaProps {
     fotos: Array<IFotos>;
     aoFotoSelecionada: (foto: IFotos) => void | null ; 
 }
+
+
 const Galeria = ({ fotos = [], aoFotoSelecionada }: GaleriaProps) => {
     return (
         <>

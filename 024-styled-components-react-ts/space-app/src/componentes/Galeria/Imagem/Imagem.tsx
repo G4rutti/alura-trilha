@@ -4,14 +4,12 @@ import expandir from "../../../../public/icones/expandir.png"
 import IFotos from "../../../interface/IFoto"
 // import IFotos from "../../../interface/IFoto"
 
-interface Props{
-    $expandida?: boolean
-}
 
-const CardImage = styled.figure<Props>`
+
+const CardImage = styled.figure<IProps>`
     /* Card foto 1 */
     margin: 0;
-    width: ${(props) => props.$expandida ? "90%" : "442px"};
+    width: ${(props) => props.expandida ? "90%" : "442px"};
     height: auto;
     color: white;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -79,20 +77,25 @@ const ButtonExpandir = styled.button`
     height: 24px;
 `
 
-const Imagem = ({ foto, titulo, fonte, expandida = false, aoZoomSolicitado = () => ""}: 
-    {   foto: IFotos, 
-        titulo: IFotos, 
-        fonte: IFotos, 
-        expandida?: boolean, 
-        aoZoomSolicitado?: (foto: IFotos) => void 
-    }) => {
+interface IProps{
+    expandida?: boolean;
+}
+
+interface IimagemProps{
+    expandida?: boolean;
+    aoZoomSolicitado?: (foto: IFotos) => void;
+    foto: IFotos;
+}
+
+
+const Imagem = ({ foto, expandida = false, aoZoomSolicitado = () => ""}: IimagemProps) => {
     return (
-        <CardImage $expandida={expandida}>
+        <CardImage expandida={expandida}>
             <img src={`../../../../public${foto.path}`} alt="" />
             <figcaption>
-                <h3>{titulo.titulo}</h3>
+                <h3>{foto.titulo}</h3>
                 <footer>
-                    <p>{fonte.fonte}</p>
+                    <p>{foto.fonte}</p>
                     <div>
                         <ButtonFavorito></ButtonFavorito>
                         {!expandida && (

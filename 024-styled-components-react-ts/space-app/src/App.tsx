@@ -9,6 +9,7 @@ import Modal from "./componentes/ModalDeZoom/Modal"
 
 import fotos from "./fotos.json"
 import { useState } from "react"
+import IFotos from "./interface/IFoto"
 
 const FundoGradiente = styled.div`
   /* Gradiente fundo */
@@ -21,12 +22,10 @@ const AppContainer = styled.div`
   width: 1440px;
   margin: 0 auto;
 `
-
 const MainContainer = styled.main`
   display: flex;
   gap: 42px;
 `
-
 const ContentContainer = styled.section`
     display: flex;
     flex-direction: column;
@@ -35,8 +34,9 @@ const ContentContainer = styled.section`
 
 
 function App() {
+
   const [fotosDaGaleria, setFotosDaGaleria] = useState(fotos);
-  const [fotoSelecionada, setFotoSelecionada] = useState(null);
+  const [fotoSelecionada, setFotoSelecionada] = useState<IFotos | null>(null);
 
   return (
     <FundoGradiente>
@@ -56,7 +56,8 @@ function App() {
       </AppContainer>
       <Modal 
         foto={fotoSelecionada}
-       aoFechar={() => setFotoSelecionada(null)}
+       onClose={() => setFotoSelecionada(null)}
+       onClick={() => setFotoSelecionada(null)}
       />
     </FundoGradiente>
   )
